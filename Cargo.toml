@@ -10,27 +10,30 @@ license-file = "LICENSE"
 
 [dependencies]
 web-view = { git = "https://github.com/Boscop/web-view#82d7cbc.git" }
-lazy_static = "1.4.0"
-rust-embed = "5.5.1"
-serde = { version = "1.0.106", features = ["derive"] }
-serde_json = "1.0.51"
+lazy_static = "1.5.0"
+rust-embed = "8.5.0"
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
 ds = "1.2.4"
-gilrs = "0.7.4"
-actix-web = "2.0.0"
-actix-rt = "1.1.0"
-mime_guess = "2.0.3"
-futures = "0.3.4"
-env_logger = "0.7.1"
-actix-web-actors = "2.0.0"
-actix = "0.9.0"
+gilrs = "0.10.8"
+actix-web = "4.8.0"
+actix-rt = "2.10.0"
+mime_guess = "2.0.5"
+futures = "0.3.30"
+env_logger = "0.11.3"
+actix-web-actors = "4.3.0"
+actix = "0.13.5"
 log = "0.4.11"
-conquer-once = "0.2.1"
-uuid = { version = "0.8.1", features = ["v4"] }
-confy = "0.4.0"
+conquer-once = "0.4.0"
+uuid = { version = "1.10.0", features = ["v4"] }
+confy = "0.6.1"
 autopilot = "0.4.0"
 tinyfiledialogs = "3.3.0"
-human-panic = "1.0.3"
-glfw = "0.41.0"
+human-panic = "2.0.0"
+glfw = "0.57.0"
+
+[patch.crates-io]
+ds = { git = "https://github.com/spacey-sooty/ds-rs.git", branch = 'updatedeps' }
 
 [target.'cfg(target_os = "linux")'.dependencies]
 libc = "0.2.74"
